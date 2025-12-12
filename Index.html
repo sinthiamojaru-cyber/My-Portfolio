@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusrat Sharmin Sinthia | Professional Portfolio</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the Inter font and custom colors (Your Favorite Color!) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // PRIMARY: Teal 600 - Use this for highlights/buttons (Your Favorite Color)
+                        'primary': '#0d9488', 
+                        // SECONDARY: Amber 300 - Use this for contrasting accents
+                        'secondary': '#fcd34d', 
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Import Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Smooth scrolling for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for the full-screen background image */
+        .bg-image {
+            /* Replace this URL with your desired background image */
+            background-image: url('image/2nd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures background image stays put when scrolling */
+            min-height: 100vh;
+        }
+        /* Style for content cards to ensure text readability over the background image */
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.95); /* Near-white semi-opaque background */
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-image">
+
+    <!-- Navigation Bar (Black Background) -->
+    <header class="sticky top-0 z-50 bg-black shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center h-16">
+                <!-- Logo/Name (Updated for dark background) -->
+                <a href="#hero" class="text-2xl font-bold text-primary hover:text-secondary transition duration-300">
+                    NSS
+                </a>
+
+                <!-- Desktop Navigation Links (Updated for dark background) -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-primary font-medium transition duration-300">About</a>
+                    <a href="#education" class="text-gray-300 hover:text-primary font-medium transition duration-300">Education</a>
+                    <a href="#skills" class="text-gray-300 hover:text-primary font-medium transition duration-300">Skills</a>
+                    <!-- PROJECTS LINK REMOVED -->
+                    <a href="#contact" class="text-gray-300 hover:text-primary font-medium transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button (Updated for dark background) -->
+                <button id="menu-button" class="md:hidden text-gray-300 hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between content-card p-10 rounded-xl shadow-2xl">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <p class="text-xl text-primary font-semibold mb-3">Hello, I'm</p>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Nusrat Sharmin Sinthia
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-light text-gray-600 mb-8">
+                        An <span class="text-secondary font-medium">Academic Coordinator</span> at Mojaru Edu Tech, dedicated to **fostering effective learning and institutional excellence**.
+                    </h2>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <!-- 'View Projects' button changed to 'View Education' -->
+                        <a href="#education" class="px-6 py-3 bg-primary text-white font-semibold rounded-lg shadow-lg hover:bg-teal-700 transition duration-300 transform hover:scale-105">
+                            View Education
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border border-primary text-primary font-semibold rounded-lg shadow-md hover:bg-teal-50 transition duration-300 transform hover:scale-105">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Picture Placeholder -->
+                <div class="md:w-1/3 flex justify-center">
+                    <!-- Replace with your actual image URL. -->
+                    <img src="Image/3rd.jpg"
+                         alt="Nusrat Sharmin Sinthia Profile Photo"
+                         class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-xl ring-4 ring-primary ring-opacity-50"
+                         onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0e7ff/0d9488?text=Placeholder+Image';"
+                    >
+                </div>
+            </div>
+        </section>
+        
+        <!-- 2. About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-card p-10 rounded-xl shadow-2xl">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Hi, I'm <span class="font-semibold text-primary">Nusrat Sharmin Sinthia</span>. I am currently working as an **Academic Coordinator at Mojaru Edu Tech**. My specialty lies in overseeing educational programs, coordinating academic staff, and ensuring the quality and delivery of effective learning experiences across our platform.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        I am passionate about implementing modern educational strategies and fostering environments where students and teachers can achieve their highest potential. I enjoy solving organizational challenges and simplifying complex processes to enhance institutional efficiency.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When I'm not focusing on academic administration, you can find me **[Hobby 1]** or learning about **[New Skill]**. I'm always open to connecting with professionals in the education technology space!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Education Section (NEW) -->
+        <section id="education" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-card p-10 rounded-xl shadow-2xl">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Education</h2>
+                
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- University -->
+                    <div class="border-l-4 border-primary pl-4">
+                        <h3 class="text-2xl font-semibold text-gray-900">[DIU]</h3>
+                        <p class="text-lg text-gray-600">Master of Science in Computer Science</p>
+                        <p class="text-sm text-gray-500">Running</p>
+                    </div>
+                    <!-- University -->
+                    <div class="border-l-4 border-primary pl-4">
+                        <h3 class="text-2xl font-semibold text-gray-900">[Eastern University]</h3>
+                        <p class="text-lg text-gray-600">Bachelor of Engineering in Computer Science & Engineering</p>
+                        <p class="text-sm text-gray-500">2019 - 2024</p>
+                    </div>
+                    <!-- School (Collage) -->
+                    <div class="border-l-4 border-primary pl-4">
+                        <h3 class="text-2xl font-semibold text-gray-900">[Govt. Zaheda Safir Mohila Collage ]</h3>
+                        <p class="text-lg text-gray-600">Science</p>
+                        <p class="text-sm text-gray-500">2017 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Skills Section (Kept as a good reference) -->
+        <section id="skills" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-card p-10 rounded-xl shadow-2xl">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Relevant Skills</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Skill Card 1 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">📋</span>
+                        <p class="text-lg font-semibold text-gray-800">Curriculum Dev.</p>
+                    </div>
+                    <!-- Skill Card 2 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">🗣️</span>
+                        <p class="text-lg font-semibold text-gray-800">Team Coordination</p>
+                    </div>
+                    <!-- Skill Card 3 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">📊</span>
+                        <p class="text-lg font-semibold text-gray-800">Data Analysis</p>
+                    </div>
+                    <!-- Skill Card 4 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">📝</span>
+                        <p class="text-lg font-semibold text-gray-800">Reporting</p>
+                    </div>
+                     <!-- Skill Card 5 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">💻</span>
+                        <p class="text-lg font-semibold text-gray-800">EduTech Tools</p>
+                    </div>
+                    <!-- Skill Card 6 (Updated for Academic Role) -->
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition duration-300 hover:shadow-xl hover:bg-opacity-20">
+                        <span class="text-4xl mb-2" role="img" aria-label="Skill Icon">💡</span>
+                        <p class="text-lg font-semibold text-gray-800">Instructional Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Projects Section (REMOVED) -->
+        
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-card p-10 rounded-xl shadow-2xl">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Let's Connect</h2>
+                
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-inner">
+                    <p class="text-lg text-gray-700 text-center mb-6">
+                        I'm currently available for new opportunities. Send me a message and let's discuss your project!
+                    </p>
+
+                    <!-- Contact Details (Name, Address, Phone, Email) -->
+                    <div class="space-y-4 text-center">
+                        <div class="flex items-center justify-center space-x-2">
+                             <!-- Address Icon (Inline SVG for simplicity) -->
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span class="text-gray-700">[House 36, Road 10, H block, Mirpur 2]</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                             <!-- Phone Icon (Inline SVG for simplicity) -->
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span class="text-gray-700">[01791112154]</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Email Icon (Inline SVG for simplicity) -->
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path></svg>
+                            <a href="mailto:sinthiamojaru@gmail.com" class="text-primary hover:text-teal-700 font-semibold">sinthiamojaru@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <p class="text-center text-sm text-gray-500 mt-6">
+                        Note: For a live contact form, you would integrate a service (like EmailJS or a backend) to handle submissions.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Black Background) -->
+    <footer class="bg-black text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- LinkedIn Icon -->
+                <a href="[https://www.linkedin.com/in/nusrat-sharmin-sinthia-694641333?utm_source=share_via&utm_content=profile&utm_medium=member_android]" target="_blank" class="text-gray-400 hover:text-primary transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.513-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                 <!-- GitHub Icon (You can keep this or remove if not relevant to your field) -->
+                <a href="[Your GitHub URL]" target="_blank" class="text-gray-400 hover:text-primary transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.353 3.433 9.38 8.234 10.747.76.136 1.05-.332 1.05-.732 0-.361-.015-1.319-.015-2.586-3.338.74-4.041-1.464-4.041-1.464-.546-1.387-1.334-1.756-1.334-1.756-1.087-.74.084-.725.084-.725 1.205.084 1.838 1.233 1.838 1.233 1.07 1.837 2.809 1.305 3.494.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.873.118 3.176.77.841 1.235 1.911 1.235 3.221 0 4.61-2.801 5.625-5.471 5.922.429.366.817 1.09.817 2.192 0 1.606-.015 2.895-.015 3.284 0 .4.288.803 1.059.664 4.703-1.36 8.196-5.385 8.196-10.739 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <!-- Facebook Icon -->
+                <a href="[https://www.facebook.com/share/1GHYDpjXb7/]" target="_blank" class="text-gray-400 hover:text-primary transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.958.172-1.333 1.333-1.333h2.5c0-1.209-.373-3.078-1.742-3.626-1.524-.616-3.841.056-5.187 1.677v2.859z"/></svg>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Nusrat Sharmin Sinthia. All rights reserved. | Built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
